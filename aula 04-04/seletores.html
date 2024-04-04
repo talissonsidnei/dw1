@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores</title>
+    <style>
+        h1 {color: rgb(9, 24, 228); 
+         }
+        p {
+            color: rgb(50, 57, 155);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+         
+         #titulo_principal {
+            background-color: rgb(10, 10, 104);
+            color: rgb(39, 129, 165);
+         }
+         #conteudo_principal {
+            color: rgb(42, 128, 199);
+            text-decoration: underline;
+         }
+
+         .destaque {
+            background-color: rgb(8, 25, 51);
+         }
+         .cor_primaria {
+            color: rgb(252, 252, 252);
+         }
+         .container {
+            background-color: rgb(17, 50, 141);
+            border: 1px solid black;
+            font-style: italic;
+         }
+
+         p.destaque {
+            font-size: large;
+         }
+         
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo_principal">Primeiro Titulo</h1>
+        <p class="destaque cor_primaria cor_primaria">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, eum. Voluptatum aspernatur aperiam alias nobis tenetur neque iure, eum explicabo cumque cupiditate quisquam architecto nisi asperiores provident nesciunt. Officiis, reiciendis.</p>
+    </div>
+    <h1 class="destaque">Segundo Titulo</h1>
+
+    <p id="conteudo_principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam recusandae architecto, accusantium minus doloremque repellendus quas esse accusamus officiis ipsam voluptatibus deleniti placeat itaque reprehenderit enim nihil soluta, quae quidem!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic repellendus aliquid, obcaecati voluptates quasi sint at ut enim nihil? Autem praesentium numquam eveniet laudantium eaque expedita ipsam pariatur magni?</p>
+    <p class="destaque cor-primaria">Timão</p>
+    <img src="data:image/png;base64,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" alt="">
+    
+</body>
+</html>
