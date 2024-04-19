@@ -13,22 +13,41 @@
     <p>O que é a tag  <code>code</code> em HTML é usada para envolver e formatar partes de texto que representam código de programação. Ela é útil para diferenciar o código do restante do conteúdo da página, tornando-o mais legível e identificável para os desenvolvedores.Quando você envolve um trecho de código com a tag <code>code</code>, o navegador normalmente o exibe em uma fonte monoespaçada (onde cada caractere tem a mesma largura) e, muitas vezes, também aplica uma formatação de cor diferente para distinguir o código do texto normal.</p>
 
     <h2>Exemplo</h2>
-    <p></p>
+    <p><code>console.log("Olá, mundo!");</code>
+    </p>
     <h1>Samp</h1>
     <h2>Definição e uso</h2>
-    <p><code>spam</code> em HTML é usada para representar texto que é uma saída de amostra de um programa de computador ou de um script. "Samp" é uma abreviação de "sample", que em inglês significa "amostra". Essa tag é útil quando você deseja exibir exemplos de saída de um programa, script ou comando, seja para fins de documentação, tutoriais ou demonstrações.O texto dentro da tag <code>samp</code> é tipicamente exibido em uma fonte monoespaçada (onde cada caractere tem a mesma largura), similar à tag <code>code</code>, mas a tag <code>samp</code> é mais específica para representar saída de programas.</p>
-    <h2>Exemplo</h2>
-    <h1>Pre</h1>
-    <h2>Definição e uso</h2>
-    <p><code>pre</code>em HTML é usada para definir texto pré-formatado. "Pre" é uma abreviação de            
-        "preformatted" em inglês, que significa "pré-formatado". Essa tag é usada quando você deseja manter a formatação exata do texto, incluindo espaços em branco, quebras de linha e qualquer outro espaçamento, exatamente como está no código HTML, sem que o navegador faça ajustes automáticos.
+    <p>A tag <code>samp</code> é uma das muitas tags em HTML (Hypertext Markup Language) usadas para marcar o conteúdo de uma página da web. Ela é usada para representar amostras de saída de programas de computador ou outros dados que devem ser exibidos em um formato pré-formatado.
+        tag <code>samp</code> é usada para envolver o texto que deve ser exibido como uma saída de programa, como o resultado de um código-fonte, um comando de terminal ou qualquer outro tipo de saída de dados que não deve ser interpretado como código HTML.
+            Ela é útil quando você deseja mostrar ao usuário como um determinado comando ou código irá aparecer quando for executado, sem que o navegador tente interpretá-lo como HTML.
 
-        A tag <code>pre</code> é útil quando você deseja exibir blocos de texto, como código-fonte, poesia ou qualquer outra forma de texto que exija uma formatação específica.
     </p>
     <h2>Exemplo</h2>
+    <p><samp>Resultado da operação: 42</samp>
+    </p>
+    <h1>Pre</h1>
+    <h2>Definição e uso</h2>
+    <p>
+        <pre>
+            <code>pre</code> em HTML é usada para definir texto pré-formatado. "Pre" é uma abreviação de            
+             "preformatted" em inglês, que significa "pré-formatado".
+            Essa tag é usada quando você deseja manter a formatação exata do texto, incluindo espaços em branco, quebras de linha e qualquer outro espaçamento, exatamente como está no código HTML, sem que o navegador faça ajustes automáticos.
+        
+             A tag <code>pre</code> é útil quando você deseja exibir blocos de texto, como código-fonte, poesia ou qualquer outra forma de texto que exija uma formatação específica.
+        </pre>
+    </p>
+    <h2>Exemplo</h2>
+    <p><pre>
+        int main() {
+            printf("Hello, world!\n");
+            return 0;
+        }
+        </pre>
+        </p>
     <h1>Kbd</h1>
     <h2>Definição e uso</h2>
-    <p><code>kbd</code> em HTML é usada para indicar entrada de teclado do usuário, como teclas   
+    <p>
+        <pre><code>kbd</code> em HTML é usada para indicar entrada de teclado do usuário, como teclas   
             pressionadas ou combinações de teclas. "Kbd" é uma abreviação de "keyboard" em inglês, que significa "teclado". 
             
             Essa tag é útil quando você deseja destacar ou representar visualmente as teclas que o usuário precisa pressionar para executar uma determinada ação, como atalhos de teclado em aplicativos ou comandos em jogos.
@@ -38,8 +57,32 @@
             A tag <code>kbd</code> geralmente renderiza o texto dentro dela em uma fonte monoespaçada (onde cada caractere tem a mesma largura) para indicar claramente que representa uma entrada de teclado. No entanto, a aparência exata pode variar dependendo do estilo CSS aplicado à página.
     
             Em resumo, a tag <code>kbd</code> é útil para representar entrada de teclado do usuário em páginas da web de uma maneira clara e visualmente distintiva.
-            
         </pre>
+    <h2>Exemplo</h2>
+    <p>Para salvar um documento no Microsoft Word, pressione <kbd>Ctrl</kbd> + <kbd>S</kbd>.</p>
+    <p>
+       
+        <pre>
+            <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> Toggle editor layout (horizontal/vertical)
+            <kbd>Ctrl</kbd> + <kbd>=</kbd> / <kbd>-</kbd> Zoom in/out
+            <kbd>Ctrl</kbd> + <kbd>B</kbd> Toggle Sidebar visibility
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> Show Explorer / Toggle focus
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> Show Search
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> Show Source Control
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd> Show Debug
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> Show Extensions
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> Replace in files
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> Toggle Search details
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> Open new command prompt/terminal
+            <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>H</kbd> Show Output panel
+            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> Open Markdown preview
+            <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd> Open Markdown preview to the side
+            <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Z</kbd> Zen Mode (Esc Esc to exit)
+    
+        </pre>
+    </p>
+
+            
 
     </p>
 </body>
