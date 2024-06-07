@@ -1,6 +1,6 @@
 :root{
     --cor-fundo: rgb(255, 255, 255);
-    --cor-principal: #ffffff;
+    --cor-principal: #000000;
     --cor-destaque: #b80710;
     --cor-boton: rgb(0, 0, 0);
     --cor-texto-destaque: #83001c;
@@ -47,17 +47,3 @@
     font-size: 20px;
     color: var(--cor-texto-destaque);
 }
-
-.neon{
-    font-size: 36px;
-    font-weight: bold;
-    animation: changeColor 0.5s infinite alternate; /* Altera a cor a cada 0.5 segundos */
-  }
-  
-  @keyframes changeColor {
-    0% { color: #000000; } /* Inicia com rosa neon */
-    25% { color: #ff0015; } /* Muda para verde neon */
-    50% { color: #000000; } /* Retorna ao rosa neon */
-    75% { color: #ff0015; } /* Muda para azul ciano neon */
-    100% { color: #000000; } /* Retorna ao rosa neon */
-  }

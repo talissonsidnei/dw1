@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site do</title>
+    <style>
+        :root{
+    --cor-fundo: rgb(255, 255, 255);
+    --cor-principal: #000000;
+    --cor-destaque: #138a37;
+    --cor-boton: rgb(9, 158, 84);
+    --cor-texto-destaque: #6df09f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: var(--cor-fundo);
+    width: 100vw;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu{
+    height: 80px;
+    background-color: var(--cor-principal);
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 25px 15px;
+    height: 80px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    background-color: var(--cor-destaque);
+    font-size: 20px;
+    color: var(--cor-texto-destaque);
+
+}
+.t {
+    text-align: center;
+    text-decoration: solid;
+    color: #138a37;
+}
+
+       
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                
+            </ul>
+        </div>
+
+        <div> 
+            <h1 class="t">Fauna</h1>
+            <p>Fauna é o termo coletivo para a vida animal de uma determinada região ou de um período de tempo. O termo correspondente para plantas é flora. Flora, fauna e outras formas de vida como os fungos são coletivamente chamados de biota.</p>
+            <p>Zoólogos e paleontólogos geralmente usam o termo fauna para se referir a uma coleção de animais tipicamente encontrados em um período específico ou lugar específico, por exemplo a “Fauna do Deserto de Sonora” ou “a fauna de Burgess Shale”. </p>
+            
+
+        </div>
+
+    </div>
+   
+    
+</body>
+</html>
