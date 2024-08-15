@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            background-color: rgb(159, 245, 180);
+            color: rgb(222, 238, 78);
+            border: 2px solid rgb(128, 186, 241);
+            border-radius: 6px;
+            outline: none;
+            padding: 0.5rem;
+        }
+        input::placeholder{
+            color: black;
+        }
+        input[type=password]{
+            background-color: rgb(23, 139, 49);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="a" method="get">
+        
+        <label for="NomeUsuario">Nome</label>
+        <input type="text" id="NomeUsuario" placeholder="Digite seu nome">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="Informe sua senha">
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" placeholder="Informe sua idade">
+
+    </form>
+    
+</body>
+</html>
