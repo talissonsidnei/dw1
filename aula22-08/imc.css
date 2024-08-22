@@ -1,0 +1,15 @@
+h1{
+    
+    color: blue;}
+
+#saida{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 10rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
+#calcular{
+    color: black;
+
+}
