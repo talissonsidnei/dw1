@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-:root{
-    --cor-fundo: #A1BA89;
-    --cor-principal: #A5CC6B;
-    --cor-destaque: #846267;
-    --cor-boton: #92BDA3;
-    --cor-texto-destaque: #FF934F;
-    --cor-logo: rgb(161, 54, 147);
-    --simples: #246A73;
-    --supuesto:#732424;
-    --noisettes:#6a2473;
+
+:root {
+    --cor-fundo: #687a79;
+    --cor-principal: #000000;
+    --cor-destaque: #68f545;
+    --cor-boton: #09e962;
+    --cor-texto-destaque: #c3e724;
+    --cor-logo: rgb(5, 15, 104);
+    --Brasil: green;
+    --Estados-Unidos: #2c0575;
+    --Canada: #f70909;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,75 +20,66 @@
     overflow-x: hidden;
 }
 
-.menu{
+
+
+.menu {
     background-color: var(--cor-fundo);
     width: 100vw;
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    max-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Pacifico', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.img_menu{
+.img_menu {
     padding: 0rem 1vw;
     width: 30vw;
     border-radius: 50%;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
-.img_menu:hover{
+.img_menu:hover {
     cursor: pointer;
     filter: grayscale(0.5);
     padding: 2rem;
 }
 
-.fotos{
-    position: relative;
-    top: 15vh;
+.fotos {
     max-width: 100vw;
     display: flex;
     justify-content: center;
-    align-content: center;
-    align-content: space-around;
-    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.navegacao{
-    max-width:100vw;
-    width: 100vw;
-    display: block;
-    height: 5rem;
+.navegacao {
+    width: 100%;
     background-color: var(--cor-principal);
 }
 
-.navegacao ul{
+.navegacao ul {
     display: flex;
     justify-content: center;
-}
-
-.navegacao li{
     list-style: none;
 }
 
-.navegacao a{
+.navegacao a {
     display: inline-block;
     padding: 1.5625rem .9375rem;
-    height: 5rem;
     text-decoration: none;
     color: white;
     transition: 0.5s;
 }
 
-.navegacao a:hover{
+.navegacao a:hover {
     background-color: var(--cor-destaque);
     font-size: 1.25rem;
     color: var(--cor-texto-destaque);
 }
 
-.menu h1{
+.menu h1 {
     font-family: "Pacifico";
     color: var(--cor-logo);
     text-align: center;
@@ -95,17 +87,16 @@
     font-size: 3rem;
 }
 
-
-.seta_topo{
-    display: flex;
+.seta_topo {
     position: fixed;
     right: 1rem;
     bottom: 1rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.seta_topo a{
+.seta_topo a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,14 +104,14 @@
     color: rgb(255, 255, 255);
 }
 
-.seta_topo svg{
+.seta_topo svg {
     fill: rgb(76, 156, 221);
     background-color: lightblue;
     border-radius: 50%;
     transition: 0.3s;
 }
 
-.seta_topo svg:hover{
+.seta_topo svg:hover {
     cursor: pointer;
     width: 2.4rem;
     height: 2.4rem;
@@ -128,15 +119,15 @@
     background-color: green;
 }
 
-.caixa h1 {
-    text-align: center;
-    padding: 1.25rem;
-}
-
 .caixa {
+    width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Pacifico', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .caixa h1 {
@@ -144,58 +135,49 @@
     padding: 1.25rem;
 }
 
-.caixa p{
+.caixa p {
     font-size: 1.25rem;
 }
 
-.letra{
+.animal {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    column-gap: .5rem;
-    padding: 0rem 1rem 1rem;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
-.estrofe{
-    display: inline-block;
-    justify-content: center;
+.animal img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
 }
 
-#simples{
-    background-color: var(--simples);
+.description {
+    font-size: 14px;
+    color: #555;
+}
+#Brasil{
+    background-color: var(--Brasil);
+    background-image: url(https://media.istockphoto.com/id/935746242/pt/foto/mata-atlantica-atlantic-forest-in-brazil.jpg?s=612x612&w=0&k=20&c=XoiwWlcQ9odpWvNrpAeq1ZM3fXEFqVbARaMo-uD9LYA=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#simples h1{
-    color: rgb(255, 255, 0);
+#Estados-Unidos{
+    background-color: var(--Estados-Unidos);
+}
+#Canada {
+    background-color: var(--Canada);
 }
 
-#simples p{
-    color: white;
+footer{
+    max-width: 100vw;
+    padding: 15px;
+    width: 100vw;
+    height: 10vh;
+    background-color: gray;
 }
-
-#supuesto{
-    background-color: var(--supuesto);
-}
-
-#supuesto h1{
-    color: rgb(255, 255, 0);
-}
-
-#supuesto p{
-    color: rgb(176, 235, 255);
-}
-
-#noisettes{
-    background-color: var(--noisettes);
-}
-
-#noisettes h1{
-    color: rgb(255, 255, 0);
-}
-
-#noisettes p{
-    color: rgb(255, 172, 223);
-}
-
-	
